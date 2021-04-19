@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> College Website</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,800;1,200;1,300&display=swap"
+        rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Start of header Section -->
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"> <img src="images/logo.png" alt="logo" title="college Logo"> </a>
+            <div class="nav-links">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li> <a href="index.html"> HOME </a> </li>
+                    <li> <a href="about.html"> ABOUT </a> </li>
+                    <li> <a href="course.html"> COURSE </a> </li>
+                    <li> <a href="blog.html"> BLOG </a> </li>
+                    <li> <a href="contact.html"> CONTACT </a> </li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1 class="blog-heading"> Contact Us</h1>
+    </section>
+    <!-- End of header Section -->
+
+    <!----------Start of location section-------->
+    <section class="location">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d109741.02912921079!2d76.6934885768626!3d30.735062644281005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390fed0be66ec96b%3A0xa5ff67f9527319fe!2sChandigarh!5e0!3m2!1sen!2sin!4v1617949784138!5m2!1sen!2sin"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+    <!--------- End of location section------->
+
+    <section class="contact-us">
+        <div class="row">
+            <div class="contact-column">
+                <div>
+                    <i class="fa fa-home"></i>
+                    <span>
+                        <h5> ABC Road,Chandigarh </h5>
+                        <p> Chandigarh (UT) </p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <span>
+                        <h5> +91 987654345 </h5>
+                        <p> 10AM to 7PM </p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-envelope-o"> </i>
+                    <span>
+                        <h5> cse.cgc@gmail.com </h5>
+                        <p> Email Us Your Query </p>
+                    </span>
+                </div>
+            </div>
+            <div class="contact-column">
+                <form action="formHandler.php" method="POST">
+                    <input type="text" placeholder="Enter Your name" name="username" required>
+                    <input type="email" placeholder="Enter Email Address" name="email" required>
+                    <input type="text" placeholder="Enter Your Subject" name="subject" required>
+                    <textarea rows="8" placeholder="Message" name="message" required></textarea>
+                    <button type="submit" class="anchor-tag" name="submit"> Send Message </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <h4> About Us </h4>
+        <p> What is Lorem Ipsum Lorem Ipsum is simply dummy text of the printing and type
+            setting industry Lorem Ipsum has been the industry'sstandard dummy text ever sin
+            ce the 1500s when an unknown printer. </p>
+        <div class="icons">
+            <a href="https://www.facebook.com" target="_blank"> <i class="fa fa-facebook"></i> </a>
+            <a href="https://www.twitter.com" target="_blank"> <i class="fa fa-twitter"></i> </a>
+            <a href="https://www.instagram.com" target="_blank"> <i class="fa fa-instagram"></i> </a>
+            <a href="https://www.linkedin.com" target="_blank"> <i class="fa fa-linkedin"></i> </a>
+        </div>
+        <p> Made with <i class="fa fa-heart"> </i> By Reshabh. </p>
+    </footer>
+    <!-- End of Footer -->
+
+    <!-- JavaScript for navigation Bar -->
+    <script>
+        let menu = document.querySelector(".nav-links");
+        function hideMenu() {
+            menu.style.right = "-200px";
+            menu.style.display = "block";
+        }
+        function showMenu() {
+            menu.style.right = "0px";
+            menu.style.display = "block";
+        }
+    </script>
+</body>
+
+</html>
